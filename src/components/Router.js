@@ -7,16 +7,31 @@ import About from "../components/About";
 import Topics from "../components/Topics";
 import Topic from "../components/Topic";
 import Login from "../components/Login";
+import Mentor from "../components/Mentor";
+import Header from "../components/Header";
 
 class Router extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      search: ""
+    };
+  }
+
+  search = val => {
+    this.setState({ search: val });
+  };
+
   render() {
     return (
       <div>
-          <Route path="/" exact component={Home} />
-          <Route path="/login" exact component={Login} />
-          <Route path="/about" exact component={About} />
-          <Route path="/topics" exact component={Topics} />
-          <Route path="/topics/:Id" exact component={Topic} />        
+        <Header />
+        <Route exact path="/" component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/about" component={About} />
+        <Route path="/topics" component={Topics} />
+        <Route path="/topics/:Id" component={Topic} />
+        <Route path="/Mentor" component={Mentor} />
       </div>
     );
   }
