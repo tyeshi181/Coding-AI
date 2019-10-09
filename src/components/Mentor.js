@@ -18,8 +18,7 @@ class Mentor extends Component {
     this.products();
   }
 
-  products() {
-    console.log("sdsss==>" + JSON.stringify(data));
+  products = () => {
 
     this.setState({
       Product: data
@@ -34,7 +33,7 @@ class Mentor extends Component {
             Product: data.product_list
          });      
         });*/
-  }
+  };
 
   loadMore = () => {
     this.setState({ isLoading: true });
@@ -47,7 +46,7 @@ class Mentor extends Component {
     clearTimeout();
   };
 
-  getSearchedProducts() {
+  getSearchedProducts = () => {
     const { search } = this.props;
     const { showProducts } = this.state;
     const productList = search
@@ -57,7 +56,6 @@ class Mentor extends Component {
       : this.state.Product;
     return productList.slice(0, showProducts);
   }
-
   render() {
     const { isLoading } = this.state;
     return (
@@ -70,7 +68,7 @@ class Mentor extends Component {
             })}
           </div>
           <div className="loadMore">
-            <button onClick={this.loadMore.bind(this)}>
+            <button onClick={this.loadMore}>
               {isLoading ? "Loading" : "Load More"}
             </button>
           </div>

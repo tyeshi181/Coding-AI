@@ -4,17 +4,17 @@ import React from "react";
 const about = () => {
   return (
     <div title="About">
-      <h1 className="aboutH1">About Page</h1>
-      <p className="about">
-        Whether you're just starting to learn to program for the first time or
-        you've been working as a developer for years, having a mentor is one of
-        the most effective ways to continue improving and ensure you're
-        constantly expanding your skill-set. Studies show that learning
-        one-on-one with a teacher can drastically impact your performance and
-        ability to improve. Coding-AI will try to match you with a mentor
-        because of how difficult it was to find mentors when learning to code.
-        With so many people entering the engineering world, mentorship is in
-        high demand, and time is a valuable resource for most successful coders.
+      <h1 className="about_h1">About us</h1>
+      <p className="about_p">
+       In today’s society, technology has become the world. 
+       Technology is shaping the world and many people are using it for its convenience. 
+       Technology has changed tremendously that it is now being incorporated into the educational system. Heidi Hayes Jacobs, an author and world renowned education leader stated that, “Teachers need to integrate technology seamlessly into the curriculum instead of viewing it as an add-on, an afterthought, or an event”. 
+       Technology should help enhance the educational system and be responsible for academic enhancement. 
+      </p>
+
+      <p>
+        At Coding AI, we are trying to match people learning technology to find mentors. 
+        Or a mentor to participate in giving back to the society by helping and guiding the new people coming into technology fields.
       </p>
     </div>
   );

@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://10secondsofcode.github.io/Coding-AI/",
   "dependencies": {
+    "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "react": "^16.6.0",
     "react-blink-text": "^1.0.3",
