@@ -246,3 +246,10 @@ body {
   justify-content: space-around;
   margin: 30px 0 30px 0;
 }
+
+.eachSvg {
+  transition: width 2s, height 2s, transform 2s;
+}
+.eachSvg:hover {
+  transform: rotateY(360deg);
+}
